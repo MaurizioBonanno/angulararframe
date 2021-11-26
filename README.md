@@ -1,6 +1,6 @@
 # Angularaframe
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This project was generated with [Angular CLI]
+il ramo master ha un progetto base creato in angular con a-frame installato configurato e pronto all'uso , il ramo lezioni contiente il corso di udemi su a-frame
 
 ## Development server
 
