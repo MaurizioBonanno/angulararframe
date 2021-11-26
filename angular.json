@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularaframe"
+    }
+  },
+  "defaultProject": "angularaframe",
+  "cli": {
+    "analytics": "3767465c-d32c-4d2a-acc5-259e020a17b8"
+  }
 }
