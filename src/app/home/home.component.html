@@ -1,10 +1,20 @@
 
     <a-scene>
-      <a-sky src="/assets/images/immagine.JPG" rotation="0 0 0">
+      <a-assets>
+        <img src="/assets/images/immagine.JPG" alt="" id="sky">
+        <img src="/assets/texture/legno.png" alt="" id="wood">
+      </a-assets>
+      <a-sky src="#sky" rotation="0 0 0">
+
+        <!-- ground -->
+        <a-plane material="color: #999999; src: #wood; repeat: 5 5;
+        normal-map: #wood; normal-texture-repeat: 5 5;" rotation="-90 0 0" scale="10 10 1">
+
+        </a-plane>
 
       </a-sky>
       <a-box color="#689f38"
-      src='/assets/texture/legno.png'
+      src='#wood'
       roughness='10'
       repeat='2 1'
       width='7'
@@ -23,5 +33,9 @@
        scale="1 1 1">
 
     </a-image>
+    <!-- entity sono vuoti ma possiamo dargli qualunque forma-->
+    <a-entity position="0 2.5 -4"></a-entity>
+    <a-entity position="0 3 -2" geometry="primitive: box;
+    height: 1.5"></a-entity>
       <a-cylinder src='/assets/texture/legno.png' position='0 0 -20' rotation="0 0 90" scale="1 1 1"></a-cylinder>
     </a-scene>
