@@ -1,15 +1,27 @@
 
     <a-scene>
-<!--       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky> -->
-      <a-sky src="/assets/images/immagine.JPG" rotation="0 -130 0">
+      <a-sky src="/assets/images/immagine.JPG" rotation="0 0 0">
 
       </a-sky>
       <a-box color="#689f38"
+      src='/assets/texture/legno.png'
+      roughness='10'
+      repeat='2 1'
       width='7'
-      height='1'
-      depth='1' ></a-box>
+      height='10'
+      depth='10'
+      position='0 3 -30'>
+    </a-box>
+    <!-- img width (px) = 1mt -->
+    <!-- img height (m) = width(m)/width(px) * img height(px) -->
+    <!-- img = 1024 x 768 height(m) = 1/1024*768 = 0.75 questo è il fattore di trasformazione in metri-->
+    <a-image
+       src="/assets/images/l09.jpg"
+       position="0 1.5 -3"
+       width="1"
+       height="0.75"
+       scale="1 1 1">
+
+    </a-image>
+      <a-cylinder src='/assets/texture/legno.png' position='0 0 -20' rotation="0 0 90" scale="1 1 1"></a-cylinder>
     </a-scene>
